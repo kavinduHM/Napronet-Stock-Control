@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@300;400;500&display=swap');
+h1{
+    font-family: poppins;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+h3{
+    font-family: poppins;
+    font-weight:400;
+}
+body{
+    background-image: url(/assets/images/background.webp);
+    background-repeat: no-repeat;
+}
+.loginheader{
+    text-align: center;
+    margin-top: 20vh;
+    line-height: 15px;
+    margin-bottom: 50px;
+}
+.loginbody form{
+    width:350px;
+    margin: auto;
+    background-color:#3b8750 ;
+    padding: 15px;
+    border: 2px solid black;
+    box-shadow: 2px 5px 6px black;
+    border-radius: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+form label{
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 20px;
+    font-family: roboto;
+    color: white;
+    text-align: center;
+}
+form input{
+    width: 250px;
+    font-family: poppins;
+    font-size: 18px;
+    border: 1px double rgb(255, 255, 255);
+    border-radius: 5px;
+    margin:0 auto;
+    display: block;
+    padding-left: 5px;
+    
+}
+
+form button{
+    width: 150px;
+    margin-top: 25px;
+    font-size: 18px;
+    font-family: poppins;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    height: 45px;
+    border-radius: 25px;
+    color: #3b8750;
+
+}
+
+.fa-solid.fa-user{
+    font-size: 50px;
+    color: white;
+}
+#usericon{
+    text-align: center;
+    padding: 10px;
+}
+
+form button:hover{
+    width: 150px;
+    background-color:red ;
+    border: 1px solid white;
+    color: white;
+}
