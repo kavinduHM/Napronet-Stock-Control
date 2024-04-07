@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@300;400;500&display=swap');
+body{
+    margin: 2;
+}
+
 h1{
     font-family: poppins;
     font-size: 45px;
@@ -7,4 +11,72 @@ h1{
 h3{
     font-family: poppins;
     font-weight:400;
+}
+
+.header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.custom-btn {
+    width: 190px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 4
+    600;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+      7px 7px 20px 0px rgba(0,0,0,.1),
+      4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+   }
+   
+   .btn-1 {
+    background:#3b8750;
+   }
+   
+   .btn-1:before {
+    height: 0%;
+    width: 2px;
+   }
+   
+   .btn-1:hover {
+    scale: 1.10;    
+   }
+
+.overview-wrapper{
+    margin-top: 70px;
+}
+
+.card_box {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+}
+.time{
+    margin: -30px;
+    text-align: center;
+    color: white;
+}
+#date{
+    margin-top: -10px;
+}  
+#clockpng{
+    margin-top: -30px;
+}
+.current-time{
+    margin-top: 30px;
+    font-size: 1.5em;
 }
