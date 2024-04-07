@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@300;400;500&display=swap');
 body{
-    margin: 2;
+    margin:0;
 }
-
 h1{
     font-family: poppins;
     font-size: 45px;
@@ -54,29 +53,100 @@ h3{
    }
 
 .overview-wrapper{
-    margin-top: 70px;
+    width: 100vw;
+    margin-top: 30px;
+    display: flex;
+    background-image: url(/assets/images/ecology.jpg);
+    background-size: cover;
+
 }
 
 .card_box {
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
-    background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+    width: 15vw;
+    height: 220px;
     position: relative;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.55);
 }
 .time{
-    margin: -30px;
     text-align: center;
     color: white;
+    margin-top: -25px;
 }
-#date{
-    margin-top: -10px;
-}  
-#clockpng{
-    margin-top: -30px;
-}
+
 .current-time{
-    margin-top: 30px;
-    font-size: 1.5em;
+  font-size: 1.5em;
+  margin:0;
 }
+.greeting{
+    width: 85vw;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* logout Button style */
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: rgb(0, 90, 41);
+  }
+  
+  /* plus sign */
+  .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg {
+    width: 17px;
+  }
+  
+  .sign svg path {
+    fill: white;
+  }
+  /* text */
+  .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+  /* hover effect on button width */
+  .Btn:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 2px;
+  }
+  /* hover effect button's text */
+  .Btn:hover .text {
+    opacity: 1;
+    width: 75%;
+    transition-duration: .3s;
+    padding-right: 2px;
+  }
+ 
