@@ -48,7 +48,6 @@ function updateDate() {
         dateElement.textContent = getCurrentDate();
     }
 }
-
 // Update date
 updateDate();
 
