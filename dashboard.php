@@ -21,24 +21,24 @@
             <div class="time">
                 <img src="assets/images/clock.png" alt="" height="150px" width="150px" id="clockpng">
                 <h3 class="time"><b>Today</b></h3>
-                <h4 class="current-time">11.35 Am</h4>
-                <p id="date">Tuesday 24th March 2024 </p>   
-            </div>
-                        
-            
+                <h4 class="current-time" id="time"></h4>
+                <p id="date"></p>   
+            </div>      
         </div>
-</div>
 
-        </div>
+        div.
 
     </div>
 
-
-
-
-
+        
 
     
+
+
+
+
+
+    <script src="/assets/Js/dashboard.js"></script>
 </body>
 </html>
 
