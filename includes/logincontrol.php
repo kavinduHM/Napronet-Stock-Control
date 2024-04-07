@@ -1,6 +1,6 @@
 <?php
 session_start();
-//sample only
+//sample only database not connected
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve user input
