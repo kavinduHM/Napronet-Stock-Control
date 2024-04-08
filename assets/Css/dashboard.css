@@ -149,4 +149,10 @@ h3{
     transition-duration: .3s;
     padding-right: 2px;
   }
- 
+.dayoverview{
+  display: flex;
+}
+.stocks{
+  height: 35vh;
+  width: 33.33vw ;
+}

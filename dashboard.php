@@ -41,6 +41,11 @@
 
     </div>
 
+    <div class="dayoverview">
+        <div class="stocks" id="coirpotstock"></div>
+        <div class="stocks" id="discstock"></div>
+        <div class="stocks" id="attendance"></div>
+    </div>
         
 
     
