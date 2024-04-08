@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@300;400;500&display=swap');
 body{
     margin:0;
+    background-image: url(/assets/images/dashbg.jpg);
+    background-size: cover;
 }
 h1{
     font-family: poppins;
@@ -16,7 +18,7 @@ h3{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    margin-top: 20px;
+    background-color: #011522;
 }
 
 .custom-btn {
@@ -53,18 +55,25 @@ h3{
    }
 
 .overview-wrapper{
-    width: 100vw;
-    margin-top: 30px;
-    display: flex;
-    background-image: url(/assets/images/ecology.jpg);
-    background-size: cover;
-
+  width: 100vw;
+  margin-top: 30px;
+  display: flex;
 }
 
 .card_box {
-    width: 15vw;
-    height: 220px;
-    position: relative;
+position: relative;
+  width: 220px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  background-color: rgba(65, 65, 65, 0.308);
+  border: 1px solid rgba(255, 255, 255, 0.089);
+  cursor: pointer;
 }
 .time{
     text-align: center;
@@ -84,6 +93,7 @@ h3{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    
 }
 
 /* logout Button style */
@@ -153,6 +163,9 @@ h3{
   display: flex;
 }
 .stocks{
-  height: 35vh;
+  height: 45vh;
   width: 33.33vw ;
+  background-color: #011522;
+  border: 1px white solid;
+  margin-top: 15px;
 }
