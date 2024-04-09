@@ -98,7 +98,9 @@
             </table>
 
         </div>
-        <div class="stocks" id="attendance"></div>
+        <div class="stocks" id="attendance">
+            <h4 id="coirpot">Today Attendance</h4>
+        </div>
     </div>
         
 
