@@ -8,12 +8,13 @@
 </head>
 <body>
     <div class="header">
-        <div class="logo"><img src="/assets/images/logo-1-192x138.png" alt="" height="100px" width="120px"></div>
+
         <button class="custom-btn btn-1">Stock Overview</button>
-        <button class="custom-btn btn-1">Stock Update</button>
+        <button class="custom-btn btn-1">Employee Manager</button>
         <button class="custom-btn btn-1">Attendance</button>
         <button class="custom-btn btn-1">Order Management</button>
         <button class="custom-btn btn-1">Inventory</button>
+        <div class="logo"><img src="/assets/images/logo-1-192x138.png" alt="" height="100px" width="120px"></div>
     </div>
 
     <div class="overview-wrapper">
@@ -29,6 +30,9 @@
         <div class="greeting">
             <div class="username">
                 <h1>Hello <span id="user">Kavindu</span></h1>
+                <h2>Welcome to Napronet E-Manager</h2>
+                <button id="guide">E-Guide</button>
+                <button id="guide">Update Stocks</button>
             </div>
             <div class="logout">
                 <button class="Btn" id="logoutBtn">
@@ -42,8 +46,58 @@
     </div>
 
     <div class="dayoverview">
-        <div class="stocks" id="coirpotstock"></div>
-        <div class="stocks" id="discstock"></div>
+        <div class="stocks" id="coirpotstock">
+            <h4 id="coirpot">Coir Pots Stock</h4>
+            <table class="stocktable">
+                <tr>
+                    <th>Item name</th>
+                    <th>Quantity In-Stock</th>
+                </tr>
+                <tr>
+                    <td>5 cm Plane pot</td>
+                    <td class="quantity">425,000</td>
+                </tr>
+                <tr>
+                    <td>10 cm Rimmed pot</td>
+                    <td class="quantity">145,000</td>
+                </tr>
+                <tr>
+                    <td>7.5 cm Plane pot</td>
+                    <td class="quantity">64,235</td>
+                </tr>
+                <tr>
+                    <td>7 Cm Oval Cut pot</td>
+                    <td class="quantity">1500</td>
+                </tr>
+            </table>
+        </div>
+        <div class="stocks" id="discstock">
+
+            <h4 id="coirpot">Disc Stock</h4>
+            <table class="stocktable">
+                <tr>
+                    <th>Item name</th>
+                    <th>Quantity In-Stock</th>
+                </tr>
+                <tr>
+                    <td>5 cm Coir compost disc</td>
+                    <td class="quantity">175,000</td>
+                </tr>
+                <tr>
+                    <td>10L Coco Chip Bags</td>
+                    <td class="quantity">4500</td>
+                </tr>
+                <tr>
+                    <td>10 Cm Coir Compost Disc</td>
+                    <td class="quantity">263,250</td>
+                </tr>
+                <tr>
+                    <td>10 Cm Coco Chip Premium</td>
+                    <td class="quantity">100</td>
+                </tr>
+            </table>
+
+        </div>
         <div class="stocks" id="attendance"></div>
     </div>
         

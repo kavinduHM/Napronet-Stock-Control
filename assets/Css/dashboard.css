@@ -18,9 +18,7 @@ h3{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    background-color: #011522;
 }
-
 .custom-btn {
     width: 190px;
     height: 40px;
@@ -92,8 +90,33 @@ position: relative;
     padding: 15px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;   
+}
+.username{
+  background-color: #3b8750;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 150px;
+  padding-right: 150px;
+  border-radius: 35px;
+  box-shadow: 15px 15px 10px #515151;
+  
+}
+.logout{
+  position: relative;
+  left: 0%;
+}
+
+#guide{
+  padding-left: 60px;
+  padding-right: 60px;
+  cursor: pointer;
+  border: 5px double rgb(253, 253, 253);
+  border-radius: 15px;
+}
+
+#guide:hover{
+  transform: scale(0.97);
 }
 
 /* logout Button style */
@@ -161,10 +184,40 @@ position: relative;
   }
 .dayoverview{
   display: flex;
+  margin: auto;
 }
 .stocks{
-  height: 45vh;
-  width: 33.33vw ;
+  height: 420px;
+  width: 33.33vw;
   border: 1px white solid;
   margin-top: 15px;
+  background-color: #3b8750c0;
+  color: white;
+  border-radius: 25px;
 }
+#coirpot{
+  text-align: center;
+  font-size: 1.2em;
+}
+
+table, th{
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+th{
+  text-align: center;
+}
+
+td{
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+.stocktable{
+  width: 99%;
+}
+.quantity{
+  text-align: right;
+}
+
+
