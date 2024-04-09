@@ -9,8 +9,9 @@ h3{
     font-weight:400;
 }
 body{
-    background-image: url(assets/images/background.webp);
+    background-image: url(/assets/images/background.webp);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .loginheader{
     text-align: center;
