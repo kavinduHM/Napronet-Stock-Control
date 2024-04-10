@@ -100,27 +100,26 @@
         </div>
         <div class="stocks" id="attendance">
             <h4 id="coirpot">Today Attendance</h4>
-
             <table class="stocktable">
                 <tr>
-                    <th>Working</th>
-                    <th>Absent</th>
+                    <th>Name</th>
+                    <th>Status</th>
                 </tr>
                 <tr>
-                    <td>5 cm Coir compost disc</td>
-                    <td class="quantity">175,000</td>
+                    <td>Chamila</td>
+                    <td>Working</td>
                 </tr>
                 <tr>
-                    <td>10L Coco Chip Bags</td>
-                    <td class="quantity">4500</td>
+                    <td>Rasika</td>
+                    <td>Working</td>
                 </tr>
                 <tr>
-                    <td>10 Cm Coir Compost Disc</td>
-                    <td class="quantity">263,250</td>
+                    <td>Thanuja</td>
+                    <td>Absent</td>
                 </tr>
                 <tr>
-                    <td>10 Cm Coco Chip Premium</td>
-                    <td class="quantity">100</td>
+                    <td>Madushanka</td>
+                    <td>Working</td>
                 </tr>
             </table>
 
