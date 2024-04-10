@@ -8,12 +8,11 @@
 </head>
 <body>
     <div class="header">
-
-        <button class="custom-btn btn-1">Stock Overview</button>
-        <button class="custom-btn btn-1">Employee Manager</button>
-        <button class="custom-btn btn-1">Attendance</button>
-        <button class="custom-btn btn-1">Order Management</button>
-        <button class="custom-btn btn-1">Inventory</button>
+        <a href="/dashboard.php"><button class="custom-btn btn-1">Stock Overview</button></a>
+        <a href="/emmanager.php"><button class="custom-btn btn-1">Employee Manager</button></a>
+        <a href="/attendance.php"><button class="custom-btn btn-1">Attendance</button></a>      
+        <a href="/ordermanagement.php"><button class="custom-btn btn-1">Order Management</button></a>
+        <a href="/inventory.php"><button class="custom-btn btn-1">Inventory</button></a>
         <div class="logo"><img src="/assets/images/logo-1-192x138.png" alt="" height="100px" width="120px"></div>
     </div>
 
