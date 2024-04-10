@@ -45,4 +45,45 @@ body{
     scale: 1.10;    
    }
 
+.heading{
+    width: 100vw;
+    display: flex;
+}
+.blank{
+    width: 50%;
+}
+.head-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head-text h2{
+    font-size: 1.9em;
+    color:#3b8750;
+    font-family: poppins;
+    padding: 0;
+    margin: 0;
+}
+.head-text p {
+    background-color: #3b8750;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.2em;
 
+}
+.current-emp{
+    width: 100%;
+    background-color: white;
+}
+.permanant-em-table th,tr,td{
+    border: 1px solid black;
+    font-size: 1.2em;
+    border-collapse: collapse;
+}
+.permanant-em-table{
+    width: 100%;
+}
