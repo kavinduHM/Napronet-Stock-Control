@@ -9,7 +9,7 @@
 
 </head>
 <body>
-
+    <!-- Logo and Greeting -->
     <div class="container">
         <div class="loginheader">
             <img src="assets/images/logo-1-192x138.png" alt="" id="logo" width="250px" height="200px">
@@ -17,6 +17,7 @@
             <h2>Napronet Pvt Ltd E-Management System</h2>
         </div>
 
+        <!-- Login Form - Connected with includes/logincontrol.php script -->
         <div class="loginbody">
 
             <form action="includes/logincontrol.php" method="post">

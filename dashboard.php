@@ -7,6 +7,7 @@
     <title>Dashboard</title>
 </head>
 <body>
+    <!-- Main Nav Bard -->
     <div class="header">
         <a href="/dashboard.php"><button class="custom-btn btn-1">Stock Overview</button></a>
         <a href="/emmanager.php"><button class="custom-btn btn-1">Employee Manager</button></a>
@@ -15,7 +16,7 @@
         <a href="/inventory.php"><button class="custom-btn btn-1">Inventory</button></a>
         <div class="logo"><img src="/assets/images/logo-1-192x138.png" alt="" height="100px" width="120px"></div>
     </div>
-
+    <!-- Real time clock with Js -->
     <div class="overview-wrapper">
         <div class="card_box">
             <div class="time">
@@ -26,6 +27,7 @@
             </div>      
         </div>
 
+        <!-- Dynamic Username Display -->
         <div class="greeting">
             <div class="username">
                 <h1>Hello <span id="user">Kavindu</span></h1>
@@ -33,6 +35,7 @@
                 <button id="guide">E-Guide</button>
                 <button id="guide">Update Stocks</button>
             </div>
+            <!-- Logout button -->
             <div class="logout">
                 <button class="Btn" id="logoutBtn">
   
@@ -43,7 +46,7 @@
         </div>
 
     </div>
-
+    <!-- Current Stock overview - Coir pots -->
     <div class="dayoverview">
         <div class="stocks" id="coirpotstock">
             <h4 id="coirpot">Coir Pots Stock</h4>
@@ -71,7 +74,7 @@
             </table>
         </div>
         <div class="stocks" id="discstock">
-
+        <!-- Current stocks - Discs -->
             <h4 id="coirpot">Disc Stock</h4>
             <table class="stocktable">
                 <tr>
@@ -97,6 +100,7 @@
             </table>
 
         </div>
+        <!-- Current day Attendance Overview -->
         <div class="stocks" id="attendance">
             <h4 id="coirpot">Today Attendance</h4>
             <table class="stocktable">

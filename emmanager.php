@@ -7,7 +7,7 @@
     <title>Employer Management</title>
 </head>
 <body>
-
+    <!-- Header -->
     <div class="header">
         <a href="/dashboard.php"><button class="custom-btn btn-1">Stock Overview</button></a>
         <a href="/emmanager.php"><button class="custom-btn btn-1">Employee Manager</button></a>
@@ -16,7 +16,7 @@
         <a href="/inventory.php"><button class="custom-btn btn-1">Inventory</button></a>
         <div class="logo"><img src="/assets/images/logo-1-192x138.png" alt="" height="100px" width="120px"></div>
     </div>
-
+    <!-- Web Panel Introduction -->
     <div class="heading">
         <div class="blank"></div>
         <div class="head-text">
@@ -25,9 +25,10 @@
             <p>View / Add / Remove / Edit Employer Details</p>
         </div>
     </div>
-
+    <!-- Current Employer data -->
     <div class="current-emp">
         <div class="permanant-emp">
+            <h3>Permanant Employer Details</h3>
             <table class="permanant-em-table">
                     <th>Name</th>
                     <th>Address</th>
@@ -55,6 +56,14 @@
                         <td>A.P.Thanuja Gunarathna</td>
                         <td>Japan House Scheme,Paragammana,Yakwila</td>
                         <td>077-425669875</td>
+                        <td>Production</td>
+                        <td>Machine operator</td>
+                        <td>Rs.850</td>
+                    </tr>
+                    <tr>
+                        <td>J.P.Gunawathi</td>
+                        <td>Hegawa,Yakwila</td>
+                        <td>077-78692541</td>
                         <td>Production</td>
                         <td>Machine operator</td>
                         <td>Rs.850</td>
