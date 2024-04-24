@@ -1,7 +1,11 @@
 <?php
+// Start session
 session_start();
 
-if (isset($_SESSION["userid"]) && $_SESSION["userid"] === true){
-    header("location:dashboard.php");
-    exit;
+// Check if the user is not logged in
+    if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+        // Redirect to the login page
+    header("Location: /index.php");
+    exit();
 }
+?>

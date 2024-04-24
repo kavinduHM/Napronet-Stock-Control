@@ -29,11 +29,12 @@
                     <input type="password" name="password" id="">
                 </div>
                 <button id="login-button">Login</button>
+                    
             </form>
         </div>
     </div>
 
 
-    <script src="javascript/login.js"></script>
+
 </body>
 </html>

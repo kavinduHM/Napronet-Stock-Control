@@ -188,8 +188,8 @@ position: relative;
   justify-content: space-around;
 }
 .stocks{
-  height: 420px;
-  width: 30vw;
+  height: 500px;
+  width: 32vw;
   border: 1px rgb(97, 97, 97) solid;
   margin-top: 15px;
   background-color: #3b8750c0;

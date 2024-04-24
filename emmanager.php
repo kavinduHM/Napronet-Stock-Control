@@ -1,3 +1,13 @@
+<?php
+// Include the database configuration file
+require_once "includes/config.php";
+require_once "includes/session.php";
+
+// Fetch data from the database
+$sql = "SELECT * FROM employers";
+$result = mysqli_query($db, $sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +26,7 @@
         <a href="/inventory.php"><button class="custom-btn btn-1">Inventory</button></a>
         <div class="logo"><img src="/assets/images/logo-1-192x138.png" alt="" height="100px" width="120px"></div>
     </div>
+    
     <!-- Web Panel Introduction -->
     <div class="heading">
         <div class="blank"></div>
@@ -25,51 +36,33 @@
             <p>View / Add / Remove / Edit Employer Details</p>
         </div>
     </div>
+    
     <!-- Current Employer data -->
     <div class="current-emp">
         <div class="permanant-emp">
-            <h3>Permanant Employer Details</h3>
+            <h3>Permanent Employer Details</h3>
             <table class="permanant-em-table">
+                <tr>
                     <th>Name</th>
                     <th>Address</th>
                     <th>Contact Number</th>
                     <th>Department</th>
                     <th>Position</th>
                     <th>Pay / Per day</th>
-                    <tr>
-                        <td>S.P.Chamila Niroshini</td>
-                        <td>374/2,Paragammana,Yakwila</td>
-                        <td>077-852456888</td>
-                        <td>Production</td>
-                        <td>Supervisor</td>
-                        <td>Rs.1250</td>
-                    </tr>
-                    <tr>
-                        <td>W.A.Rasika Arachchige</td>
-                        <td>374/2,Dabagahagedara,Yakwila</td>
-                        <td>077-425669875</td>
-                        <td>Production</td>
-                        <td>Mechanic</td>
-                        <td>Rs.2500</td>
-                    </tr>
-                    <tr>
-                        <td>A.P.Thanuja Gunarathna</td>
-                        <td>Japan House Scheme,Paragammana,Yakwila</td>
-                        <td>077-425669875</td>
-                        <td>Production</td>
-                        <td>Machine operator</td>
-                        <td>Rs.850</td>
-                    </tr>
-                    <tr>
-                        <td>J.P.Gunawathi</td>
-                        <td>Hegawa,Yakwila</td>
-                        <td>077-78692541</td>
-                        <td>Production</td>
-                        <td>Machine operator</td>
-                        <td>Rs.850</td>
-                    </tr>
-                    
-                
+                </tr>
+                <?php
+                // Output data from the database
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo "<tr>";
+                    echo "<td>" . htmlspecialchars($row['Name']) . "</td>";
+                    echo "<td>" . htmlspecialchars($row['Address']) . "</td>";
+                    echo "<td>" . htmlspecialchars($row['ContactNumber']) . "</td>";
+                    echo "<td>" . htmlspecialchars($row['Department']) . "</td>";
+                    echo "<td>" . htmlspecialchars($row['Position']) . "</td>";
+                    echo "<td>Rs." . htmlspecialchars($row['DayPayRate']) . "</td>";
+                    echo "</tr>";
+                }
+                ?>
             </table>
         </div>
     </div>
