@@ -33,7 +33,7 @@ $result = mysqli_query($db, $sql);
         <div class="head-text">
             <img src="/assets/images/empimage.png" alt="" height="175px" width="190px">
             <h2>Employer Management System</h2>
-            <p>View / Add / Remove / Edit Employer Details</p>
+            <a href="/EmployerEdit.php"><p>View / Add / Remove / Edit Employer Details</p></a>
         </div>
     </div>
     
