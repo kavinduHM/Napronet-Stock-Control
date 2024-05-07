@@ -1,9 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@300;400;500&display=swap');
+
+.header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-image: url(/assets/images/dashbg.jpg);
+
+}
+
+.custom-btn {
+    width: 190px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 4
+    600;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+      7px 7px 20px 0px rgba(0,0,0,.1),
+      4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+   }
+   
+   .btn-1 {
+    background:#3b8750;
+   }
+   
+   .btn-1:before {
+    height: 0%;
+    width: 2px;
+   }
+   
+   .btn-1:hover {
+    scale: 1.10;    
+   }
+
 label, input, select {
     display: block;
     margin-bottom: 10px; /* Add some space between elements */
 }
 .updateForm{
+    margin-top: 25px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    
+}
+#stockUpdateForm{
+    background-color:#3b8750;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 2px double rgb(23, 255, 158);
+    border-radius: 25px;
+}
+label{
+    color: white;
+    font-family: poppins,Arial;
+    font-size: 1.3em;
+}
+input, select{
+    height: 30px;
+    font-size: 1.3em;
+    font-family: poppins,Arial;
+    font-weight: 500;
+
+}
+body{
+    background-image: url(/assets/images/dashbg.jpg);
+}
+
+#submitButton{
+    cursor: pointer;
+    border-radius: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 45px;
+}
+.stockUpdateTop{
+    display: flex;
+    backdrop-filter: blur(45px);
+    color: white;
+    text-align: center;
+    height: 8vh;
     justify-content: center;
 }
