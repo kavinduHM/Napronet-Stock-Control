@@ -37,7 +37,7 @@
                 <h1>Hello <span id="user">Kavindu</span></h1>
                 <h2>Welcome to Napronet E-Manager</h2>
                 <button id="guide">E-Guide</button>
-                <button id="guide">Update Stocks</button>
+                <a href="/stockupdate.php"><button id="guide">Update Stocks</button></a>
             </div>
             <!-- Logout button -->
             <form action="/includes/logout.php" method="post">
