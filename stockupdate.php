@@ -27,12 +27,14 @@
 <div class="updateForm">
     <form id="stockUpdateForm" action="/includes/stock.php" method="post">
         <label for="productType">Product Type :</label>
-            <select name="productType" id="product-Type">
+            <select name="productType" id="product-Type" required>
+                <option value="">Select Product Type</option>
                 <option value="Coir Pot">Coir Pot</option>
                 <option value="Disc">Coir Compost Discs</option>
             </select>
     <label for="productId">Product Code:</label>
-        <select name="productId" id="productId">
+        <select name="productId" id="productId" required>
+            <option value="">Select Product Code</option>
             <option value="CP-116">CP-116</option>
             <option value="CP-117">CP-117</option>
             <option value="CP-124">CP-124</option>
@@ -45,8 +47,8 @@
     <label for="productName">Product Name:</label>
     <input type="text" id="productName" name="productName" readonly>
     <label for="updateamount">No. Units to Add / Remove</label>
-    <input type="number" name="updateAmount" id="">
-        <select name="addRemove" id="">
+    <input type="number" name="updateAmount" id="" required>
+        <select name="addRemove" id="" required>
             <option value="add">Add Stock</option>
             <option value="remove">Remove Stock</option>
         </select>
