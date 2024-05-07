@@ -29,12 +29,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Execute SQL query
         if ($db->query($sql) === TRUE) {
-            echo "Stock updated successfully.";
+            // Redirect to stockupdate.php with success message
+            header("Location: /stockupdate.php?message=success");
+            exit(); // Ensure no further code is executed after redirection
         } else {
-            echo "Error updating stock: " . $db->error;
+            // Redirect to stockupdate.php with error message
+            header("Location: /stockupdate.php?message=error");
+            exit(); // Ensure no further code is executed after redirection
         }
-    } else {
-        echo "Invalid product type.";
+        } else {
+            // Redirect to stockupdate.php with error message (invalid product type)
+            header("Location: /stockupdate.php?message=invalid_type");
+            exit(); // Ensure no further code is executed after redirection
     }
 }
 ?>

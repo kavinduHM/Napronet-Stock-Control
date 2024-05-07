@@ -8,6 +8,22 @@
 </head>
 <body>
 
+    <!-- Main Nav Bar -->
+    <div class="header">
+        <a href="/dashboard.php"><button class="custom-btn btn-1">Stock Overview</button></a>
+        <a href="/emmanager.php"><button class="custom-btn btn-1">Employee Manager</button></a>
+        <a href="/attendance.php"><button class="custom-btn btn-1">Attendance</button></a>      
+        <a href="/ordermanagement.php"><button class="custom-btn btn-1">Order Management</button></a>
+        <a href="/inventory.php"><button class="custom-btn btn-1">Inventory</button></a>
+        <div class="logo"><img src="/assets/images/logo-1-192x138.png" alt="" height="100px" width="120px"></div>
+    </div>
+
+    <div class="stockUpdateTop">
+        <h1>Update / Add / Remove the Current Stocks</h1>
+    </div>
+
+
+
 <div class="updateForm">
     <form id="stockUpdateForm" action="/includes/stock.php" method="post">
         <label for="productType">Product Type :</label>
@@ -34,7 +50,23 @@
             <option value="add">Add Stock</option>
             <option value="remove">Remove Stock</option>
         </select>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" id="submitButton">
+        <!-- Error / Success Message -->
+        <?php
+    // Check if a message query parameter is present in the URL
+    if (isset($_GET['message'])) {
+        $message = $_GET['message'];
+        
+        // Display appropriate message based on the value of the message parameter
+        if ($message === 'success') {
+            echo '<p style="color: white;">Stock updated successfully.</p>';
+        } elseif ($message === 'error') {
+            echo '<p style="color: red;">Error updating stock.</p>';
+        } elseif ($message === 'invalid_type') {
+            echo '<p style="color: red;">Invalid product type.</p>';
+        }
+    }
+    ?>
     </form>
 
 </div>
