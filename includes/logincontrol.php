@@ -51,9 +51,9 @@ if (isset($stmt)) {
 // Close database connection
 mysqli_close($db);
 
-// Redirect back to login page with error message if applicable
+// Redirect back to index.php with error message if applicable
 if (!empty($error)) {
-    header("Location: /login.php?error=" . urlencode($error));
+    header("Location: /index.php?error=" . urlencode($error));
     exit();
 }
 ?>

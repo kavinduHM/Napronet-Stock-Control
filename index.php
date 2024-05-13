@@ -28,6 +28,12 @@
                     <label for="password" class="loginformlabel">Enter Your Password</label>
                     <input type="password" name="password" id="">
                 </div>
+                <?php
+                // Display error message if it exists
+                    if (isset($_GET['error'])) {
+                    echo '<div class="error-message">' . htmlspecialchars($_GET['error']) . '</div>';
+                    }
+                ?>
                 <button id="login-button">Login</button>
                     
             </form>
